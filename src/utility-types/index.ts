@@ -1,5 +1,4 @@
-import { MyUser } from "./types";
-// import * as UtilityTypes from "./utility-types";
+import { MyUser, MyUserOptional } from "../types";
 
 let user: MyUser = {
     id: 1,
@@ -9,8 +8,7 @@ let user: MyUser = {
     courses: ["JavaScript", "TypeScript", "Angular", "React"],
 };
 
-function helloWorld() {
-    console.log(user);
-}
-
-helloWorld();
+let userOptional: MyUserOptional = {
+    id: 1,
+    name: "John Doe",
+};
